@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 
 import SectionHeader from "../Atomics/SectionHeader/SectionHeader";
 import VideoCard from "../Atomics/VideoCard/VideoCard";
+import v4 from "@/assets/img/v4.png"
 
 const MyVideos: React.FC = () => {
 	return (
@@ -16,7 +17,7 @@ const MyVideos: React.FC = () => {
 
 					<Col xl={3} sm={6} className="mb-3">
 						<VideoCard
-							imgSrc="img/v4.png"
+							imgSrc={v4.src}
 							time="3:50"
 							videoTitle="There are many variations of passages of Lorem"
 							videoCategory="Education"
@@ -28,7 +29,7 @@ const MyVideos: React.FC = () => {
 
 					<Col xl={3} sm={6} className="mb-3">
 						<VideoCard
-							imgSrc="img/v4.png"
+							imgSrc={v4.src}
 							time="3:50"
 							videoTitle="There are many variations of passages of Lorem"
 							videoCategory="Education"
@@ -40,7 +41,7 @@ const MyVideos: React.FC = () => {
 
 					<Col xl={3} sm={6} className="mb-3">
 						<VideoCard
-							imgSrc="img/v4.png"
+							imgSrc={v4.src}
 							time="3:50"
 							videoTitle="There are many variations of passages of Lorem"
 							videoCategory="Education"
@@ -51,7 +52,7 @@ const MyVideos: React.FC = () => {
 
 					<Col xl={3} sm={6} className="mb-3">
 						<VideoCard
-							imgSrc="img/v4.png"
+							imgSrc={v4.src}
 							time="3:50"
 							videoTitle="There are many variations of passages of Lorem"
 							videoCategory="Education"

@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 
 import SectionHeader from "../Atomics/SectionHeader/SectionHeader";
 import ChannelCard from "../Atomics/ChannelCard/ChannelCard";
+import s1 from "@/assets/img/s1.png"
 
 const MyChannels: React.FC = () => {
 	return (
@@ -16,7 +17,7 @@ const MyChannels: React.FC = () => {
 
 					<Col xl={3} sm={6} className="mb-3">
 						<ChannelCard
-							imgSrc="img/s1.png"
+							imgSrc={s1.src}
 							views="1.4M"
 							channelName="Channel Name"
 							subscriberCount="382,323"
@@ -24,7 +25,7 @@ const MyChannels: React.FC = () => {
 					</Col>
 					<Col xl={3} sm={6} className="mb-3">
 						<ChannelCard
-							imgSrc="img/s1.png"
+							imgSrc={s1.src}
 							views="1.4M"
 							channelName="Channel Name"
 							subscriberCount="382,323"
@@ -32,7 +33,7 @@ const MyChannels: React.FC = () => {
 					</Col>
 					<Col xl={3} sm={6} className="mb-3">
 						<ChannelCard
-							imgSrc="img/s1.png"
+							imgSrc={s1.src}
 							views="1.4M"
 							channelName="Channel Name"
 							subscriberCount="382,323"
@@ -42,7 +43,7 @@ const MyChannels: React.FC = () => {
 					</Col>
 					<Col xl={3} sm={6} className="mb-3">
 						<ChannelCard
-							imgSrc="img/s1.png"
+							imgSrc={s1.src}
 							views="1.4M"
 							channelName="Channel Name"
 							subscriberCount="382,323"
@@ -50,7 +51,7 @@ const MyChannels: React.FC = () => {
 					</Col>
 					<Col xl={3} sm={6} className="mb-3">
 						<ChannelCard
-							imgSrc="img/s1.png"
+							imgSrc={s1.src}
 							views="1.4M"
 							channelName="Channel Name"
 							subscriberCount="382,323"
@@ -58,7 +59,7 @@ const MyChannels: React.FC = () => {
 					</Col>
 					<Col xl={3} sm={6} className="mb-3">
 						<ChannelCard
-							imgSrc="img/s1.png"
+							imgSrc={s1.src}
 							views="1.4M"
 							channelName="Channel Name"
 							subscriberCount="382,323"
@@ -66,7 +67,7 @@ const MyChannels: React.FC = () => {
 					</Col>
 					<Col xl={3} sm={6} className="mb-3">
 						<ChannelCard
-							imgSrc="img/s1.png"
+							imgSrc={s1.src}
 							views="1.4M"
 							channelName="Channel Name"
 							subscriberCount="382,323"
@@ -74,7 +75,7 @@ const MyChannels: React.FC = () => {
 					</Col>
 					<Col xl={3} sm={6} className="mb-3">
 						<ChannelCard
-							imgSrc="img/s1.png"
+							imgSrc={s1.src}
 							views="1.4M"
 							channelName="Channel Name"
 							subscriberCount="382,323"
