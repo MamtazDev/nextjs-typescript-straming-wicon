@@ -121,7 +121,7 @@ const Navigation: React.FC<NavigationProps> = ({ props }) => {
               <>
                 <FaBell className="text-secondary m-2" />
                 {/* <FontAwesomeIcon icon={faBell} fixedWidth /> */}
-                <Badge variant="danger">9+</Badge>
+                <Badge>9+</Badge>
               </>
             }
             id=""
