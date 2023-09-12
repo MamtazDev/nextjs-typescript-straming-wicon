@@ -10,11 +10,16 @@ import {
   VerifiedTooltip,
   UnverifiedTooltip,
 } from "../CustomCheckTooltips/CustomCheckTooltips";
+import { RiVerifiedBadgeFill } from "react-icons/ri";
+import { PiSmileySadFill } from "react-icons/pi";
+import { LuCalendarDays } from "react-icons/lu";
+import { AiFillCloseCircle } from "react-icons/ai";
+import { BsFillPlayCircleFill } from "react-icons/bs";
 
 interface WatchedVideoCardProps {
   iconHref?: string;
   imgHref?: string;
-  imgSrc: string;
+  imgSrc: any;
   imgAlt?: string;
   time?: string;
   videoTitle?: string;
@@ -29,12 +34,12 @@ interface WatchedVideoCardProps {
 
 interface IDiv {
   children: string;
-   className: string;
-    role: "progressbar";
-     style: { width: string; }; 
-     "aria-valuenow": string; 
-     "aria-valuemin:String": string;
-      "aria-valuemax:String": string;
+  className: string;
+  role: "progressbar";
+  style: { width: string };
+  "aria-valuenow": string;
+  "aria-valuemin:String": string;
+  "aria-valuemax:String": string;
 }
 
 const WatchedVideoCard: React.FC<WatchedVideoCardProps> = ({
@@ -58,17 +63,19 @@ const WatchedVideoCard: React.FC<WatchedVideoCardProps> = ({
         <div className="video-card-image">
           <a className="video-close" href={iconHref}>
             {/* <FontAwesomeIcon icon={faTimesCircle} /> */}
+            <AiFillCloseCircle />
           </a>
           <a className="play-icon" href={iconHref}>
             {/* <FontAwesomeIcon icon={faPlayCircle} /> */}
+            <BsFillPlayCircleFill />
           </a>
           <a href={imgHref}>
-            <img className="img-fluid" src={imgSrc} alt={imgAlt} />
+            <img className="img-fluid" src={imgSrc.src} alt={imgAlt} />
           </a>
           <div className="time">{time}</div>
         </div>
         <div className="progress">
-          <div 
+          <div
             className="progress-bar"
             role="progressbar"
             style={{ width: progress + "%" }}
@@ -91,11 +98,13 @@ const WatchedVideoCard: React.FC<WatchedVideoCardProps> = ({
             }
           >
             {videoCategory}{" "}
-            {verified ? <VerifiedTooltip /> : <UnverifiedTooltip />}
+            {/* {verified ? <VerifiedTooltip /> : <UnverifiedTooltip />} */}
+            {verified ? <RiVerifiedBadgeFill /> : <PiSmileySadFill />}
           </div>
           <div className="video-view">
             {views} views &nbsp;
             {/* <FontAwesomeIcon icon={faCalendarAlt} />  */}
+            <LuCalendarDays />
             {timeAgo} ago
           </div>
         </div>

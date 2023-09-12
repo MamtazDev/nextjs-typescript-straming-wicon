@@ -1,6 +1,7 @@
 
 import React from "react";
 import { VerifiedTooltip } from "../CustomCheckTooltips/CustomCheckTooltips";
+import {RiVerifiedBadgeFill} from "react-icons/ri"
 
 interface SlideProps {
 	href?: string;
@@ -19,7 +20,7 @@ const Slide: React.FC<SlideProps> = ({
 	views,
 	verified = null,
 }) => {
-	const verifyLabel = verified ? <VerifiedTooltip /> : null;
+	const verifyLabel = verified ? <RiVerifiedBadgeFill /> : null;
 
 
 	

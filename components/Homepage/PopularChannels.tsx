@@ -57,14 +57,13 @@
 // 	);
 // }
 
-
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import SectionHeader from "../Atomics/SectionHeader/SectionHeader";
 import ChannelCard from "../Atomics/ChannelCard/ChannelCard";
-import s1 from "@/assets/img/s1.png"
+import s1 from "@/assets/img/s1.png";
 
 export default function PopularChannels() {
   return (
@@ -99,7 +98,7 @@ export default function PopularChannels() {
               views="1.4M"
               channelName="Channel Name"
               subscriberCount="382,323"
-              verified
+              // verified
               isSubscribed
               outline
             />

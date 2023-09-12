@@ -46,7 +46,7 @@ const UploadVideo = () => {
 
 								<div className="osahan-close">
 									<a href="#">
-										{/* <FontAwesomeIcon icon={faTimesCircle} /> */}
+										<FontAwesomeIcon icon={faTimesCircle} />
 									</a>
 								</div>
 							</div>

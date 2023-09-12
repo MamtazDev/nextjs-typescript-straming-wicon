@@ -31,13 +31,13 @@
 
 // export default TopCategory;
 
-
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import SectionHeader from "../Atomics/SectionHeader/SectionHeader";
 import TopCategoriesSlider from "./TopCategoriesSlider";
 import { faEllipsisH } from "@fortawesome/free-solid-svg-icons";
+import { BsThreeDots } from "react-icons/bs";
 
 function TopCategory() {
   return (
@@ -48,7 +48,7 @@ function TopCategory() {
             <SectionHeader
               heading="Channels Categories"
               noIconLabel
-              // icon={faEllipsisH}
+              icon={BsThreeDots}
             />
           </Col>
 

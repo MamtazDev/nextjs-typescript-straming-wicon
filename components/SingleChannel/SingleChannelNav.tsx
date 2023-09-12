@@ -12,78 +12,88 @@ import { VerifiedTooltip } from "../Atomics/CustomCheckTooltips/CustomCheckToolt
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { Button, Form, FormControl, Nav, NavDropdown, Navbar } from "react-bootstrap";
+import { BiSearchAlt2 } from "react-icons/bi";
+import {
+  Button,
+  Form,
+  FormControl,
+  Nav,
+  NavDropdown,
+  Navbar,
+} from "react-bootstrap";
 import Link from "next/link";
 
 const SingleChannelNav: React.FC = () => {
-	return (
-		<>
-			<div className="single-channel-nav">
-				<Navbar expand="lg">
-					<Navbar.Brand className="channel-brand">
-						Osahan Channel <VerifiedTooltip />
-					</Navbar.Brand>
+  return (
+    <>
+      <div className="single-channel-nav">
+        <Navbar expand="lg">
+          <Navbar.Brand className="channel-brand">
+            Osahan Channel <VerifiedTooltip />
+          </Navbar.Brand>
 
-					<Navbar.Toggle aria-controls="navbarSupportedContent" />
+          <Navbar.Toggle aria-controls="navbarSupportedContent" />
 
-					<Navbar.Collapse id="navbarSupportedContent" >
-						<Nav as="ul" className="mr-auto">
-							<li className="nav-item active">
-								<Link className="nav-link " href="#">
-									Videos
-								</Link>
-							</li>
-							<li className="nav-item">
-								<Link className="nav-link" href={""}>Playlists</Link>
-							</li>
-							<li className="nav-item">
-								<Link className="nav-link" href={""}>Channels</Link>
-							</li>
-							<li className="nav-item">
-								<Link className="nav-link" href={""}>Discussion</Link>
-							</li>
-							<li className="nav-item">
-								<Link className="nav-link" href={""}>About</Link>
-							</li>
+          <Navbar.Collapse id="navbarSupportedContent">
+            <Nav as="ul" className="mr-auto">
+              <li className="nav-item active">
+                <Link className="nav-link " href="#">
+                  Videos
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" href={""}>
+                  Playlists
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" href={""}>
+                  Channels
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" href={""}>
+                  Discussion
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" href={""}>
+                  About
+                </Link>
+              </li>
 
-							<NavDropdown title="Donate" id="basic-nav-dropdown">
-								<NavDropdown.Item href="#">
-									Action
-								</NavDropdown.Item>
-								<NavDropdown.Item href="#">
-									Another action
-								</NavDropdown.Item>
-								<NavDropdown.Divider />
-								<NavDropdown.Item href="#">
-									Something
-								</NavDropdown.Item>
-							</NavDropdown>
-						</Nav>
-						<Form 
-					 className=" my-2 my-lg-0 d-flex	align-items-center">
-							<FormControl
-								type="text"
-								placeholder="Search"
-								className="mr-sm-1"
-								size="sm"
-							/>
-							<Button
-								variant="outline-success"
-								size="sm"
-								className="my-2 my-sm-0"
-							>
-								{/* <FontAwesomeIcon icon={faSearch} /> */}
-							</Button>
-							&nbsp;&nbsp;&nbsp;
-							<Button variant="outline-danger" size="sm">
-								Subscribe <strong>1.4M</strong>
-							</Button>
-						</Form>
-					</Navbar.Collapse>
-				</Navbar>
-			</div>
-		</>
-	);
+              <NavDropdown title="Donate" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#">Another action</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#">Something</NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+            <Form className="ms-auto my-2 my-lg-0 d-flex	align-items-center">
+              <FormControl
+                type="text"
+                placeholder="Search"
+                className="mr-sm-1 ms-auto me-2"
+                size="sm"
+              />
+              <Button
+                variant="outline-success"
+                size="sm"
+                className="my-2 my-sm-0"
+              >
+                {/* <FontAwesomeIcon icon={faSearch} /> */}
+                <BiSearchAlt2 />
+              </Button>
+              &nbsp;&nbsp;&nbsp;
+              <Button variant="outline-danger d-flex gap-1" size="sm">
+                Subscribe <strong>1.4M</strong>
+              </Button>
+            </Form>
+          </Navbar.Collapse>
+        </Navbar>
+      </div>
+    </>
+  );
 };
 
 export default SingleChannelNav;

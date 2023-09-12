@@ -1,7 +1,7 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { IconProp } from "@fortawesome/fontawesome-svg-core"; 
+// import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import Link from "next/link";
 
 interface NavItemProps {
@@ -12,12 +12,19 @@ interface NavItemProps {
   children?: React.ReactNode;
 }
 
-const NavItem: React.FC<NavItemProps> = ({ href, faIcon, label, active, children }) => {
+const NavItem: React.FC<NavItemProps> = ({
+  href,
+  faIcon,
+  label,
+  active,
+  children,
+}) => {
   return (
     <>
       <li className={active ? "nav-item active" : "nav-item"}>
         <Link href={href} className="nav-link">
           {/* <FontAwesomeIcon icon={faIcon} fixedWidth />  */}
+          {faIcon}
           <span>{label}</span>
         </Link>
       </li>

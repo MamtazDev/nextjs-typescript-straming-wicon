@@ -10,7 +10,7 @@ export default function VideoBlock() {
 		<>
 			<div className="video-block section-padding ">
 				<Row>
-					<Col md={12}>
+					<Col md={12} >
 						<SectionHeader heading="Featured Videos" />
 					</Col>
 

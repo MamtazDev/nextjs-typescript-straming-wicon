@@ -6,6 +6,8 @@ import {
 } from "../CustomCheckTooltips/CustomCheckTooltips";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlayCircle, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
+import { RiVerifiedBadgeFill } from "react-icons/ri";
+import { PiSmileySadFill } from "react-icons/pi";
 
 interface VideoCardProps {
   iconHref?: string;
@@ -39,7 +41,7 @@ const VideoCard: React.FC<VideoCardProps> = ({
       <div className="video-card">
         <div className="video-card-image">
           <a className="play-icon" href={iconHref}>
-            {/* <FontAwesomeIcon icon={faPlayCircle} /> */}
+            <FontAwesomeIcon icon={faPlayCircle} />
           </a>
           <a href={imgHref}>
             <img className="img-fluid" src={imgSrc} alt={imgAlt} />
@@ -58,12 +60,15 @@ const VideoCard: React.FC<VideoCardProps> = ({
             }
           >
             {videoCategory}{" "}
-            {verified ? <VerifiedTooltip /> : <UnverifiedTooltip />}
+            {/* {verified ? <VerifiedTooltip /> : <UnverifiedTooltip />} */}
+            {verified ? <RiVerifiedBadgeFill /> : <PiSmileySadFill />}
           </div>
-          <div className="video-view">
+          <div className="video-view d-flex gap-1 align-items-center">
             {views} views &nbsp;
-            {/* <FontAwesomeIcon icon={faCalendarAlt} /> */}
-			 {timeAgo} ago
+            <div style={{ width: "12px" }}>
+              <FontAwesomeIcon icon={faCalendarAlt} />
+            </div>
+            {timeAgo} ago
           </div>
         </div>
       </div>

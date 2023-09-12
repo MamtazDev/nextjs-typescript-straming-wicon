@@ -91,8 +91,6 @@
 // export default SectionHeader;
 // export { HeadingWrapper };
 
-
-
 import React from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -122,11 +120,19 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   let dropdownBodyz: React.ReactNode;
 
   if (dropdownOnly) {
-    dropdownBodyz = <ButtonGroup dropdownIcon={dropdownIcon} dropdownIconLabel={dropdownIconLabel} />;
+    dropdownBodyz = (
+      <ButtonGroup
+        dropdownIcon={dropdownIcon}
+        dropdownIconLabel={dropdownIconLabel}
+      />
+    );
   } else {
     dropdownBodyz = (
       <HeadingWrapper heading={heading}>
-        <ButtonGroup dropdownIcon={dropdownIcon} dropdownIconLabel={dropdownIconLabel} />
+        <ButtonGroup
+          dropdownIcon={dropdownIcon}
+          dropdownIconLabel={dropdownIconLabel}
+        />
       </HeadingWrapper>
     );
   }
@@ -139,9 +145,12 @@ interface ButtonGroupProps {
   dropdownIconLabel?: string;
 }
 
-const ButtonGroup: React.FC<ButtonGroupProps> = ({ dropdownIcon, dropdownIconLabel }) => {
+const ButtonGroup: React.FC<ButtonGroupProps> = ({
+  dropdownIcon,
+  dropdownIconLabel,
+}) => {
   return (
-    <>
+    <div>
       <div className="btn-group float-right right-action">
         <Dropdown>
           <Dropdown.Toggle
@@ -150,9 +159,7 @@ const ButtonGroup: React.FC<ButtonGroupProps> = ({ dropdownIcon, dropdownIconLab
             className="right-action-link text-gray no-after"
           >
             {dropdownIconLabel}{" "}
-            <span>
-              {/* <FontAwesomeIcon icon={dropdownIcon} /> */}
-            </span>
+            <span>{/* <FontAwesomeIcon icon={dropdownIcon} /> */}</span>
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
@@ -171,7 +178,7 @@ const ButtonGroup: React.FC<ButtonGroupProps> = ({ dropdownIcon, dropdownIconLab
           </Dropdown.Menu>
         </Dropdown>
       </div>
-    </>
+    </div>
   );
 };
 
@@ -180,12 +187,15 @@ interface HeadingWrapperProps {
   heading?: string;
 }
 
-const HeadingWrapper: React.FC<HeadingWrapperProps> = ({ children, heading }) => {
+const HeadingWrapper: React.FC<HeadingWrapperProps> = ({
+  children,
+  heading,
+}) => {
   return (
     <>
-      <div className="main-title">
-        {children ? children : ""}
+      <div className="main-title d-flex align-items-center justify-content-between">
         <h6>{heading}</h6>
+        {children ? children : ""}
       </div>
     </>
   );

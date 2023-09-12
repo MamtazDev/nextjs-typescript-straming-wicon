@@ -17,6 +17,14 @@ import NavItem from "./NavItem";
 //   faListAlt,
 // } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import { FaHome } from "react-icons/fa";
+import { IoIosPeople } from "react-icons/io";
+import { FaUser } from "react-icons/fa";
+import { FaVideo } from "react-icons/fa";
+import { FaCloudUploadAlt } from "react-icons/fa";
+import { AiFillFolder } from "react-icons/ai";
+import { FaHistory } from "react-icons/fa";
+import { BsCardList } from "react-icons/bs";
 
 interface SidebarProps {
   props: {
@@ -32,15 +40,22 @@ const Sidebar: React.FC<SidebarProps> = ({ props }) => {
   return (
     <>
       <ul className={sidebarClass}>
-      <NavItem href="/" label="Home" active faIcon={undefined} />
-        <NavItem href="/channels" label="Channels" faIcon={undefined} />
+        <NavItem href="/" label="Home" active faIcon={<FaHome />} />
+        <NavItem href="/channels" label="Channels" faIcon={<IoIosPeople />} />
 
-        <NavItem href="/single-channel" label="Single Channel" faIcon={undefined} />
-        <NavItem href="/video-page" label="Video Page" faIcon={undefined} />
-        <NavItem href="/upload-video" label="Upload Video" faIcon={undefined} />
+        <NavItem
+          href="/single-channel"
+          label="Single Channel"
+          faIcon={<FaUser />}
+        />
+        <NavItem href="/video-page" label="Video Page" faIcon={<FaVideo />} />
+        <NavItem
+          href="/upload-video"
+          label="Upload Video"
+          faIcon={<FaCloudUploadAlt />}
+        />
 
-        
-      {/* <NavItem href="/" faIcon={faHome} label="Home" active />
+        {/* <NavItem href="/" faIcon={faHome} label="Home" active />
         <NavItem href="/channels" faIcon={faUsers} label="Channels" />
 
         <NavItem href="/single-channel" faIcon={faUserAlt} label="Single Channel" />
@@ -48,12 +63,16 @@ const Sidebar: React.FC<SidebarProps> = ({ props }) => {
         <NavItem href="/upload-video" faIcon={faCloudUploadAlt} label="Upload Video" /> */}
 
         <NavDropdown
-				  as="li"
-				  title={<>
-					  {/* <FontAwesomeIcon icon={faFolder} fixedWidth />  */}
-					  
-					  <span>Pages</span>
-				  </>} id={""}        >
+          as="li"
+          title={
+            <>
+              {/* <FontAwesomeIcon icon={faFolder} fixedWidth />  */}
+              <AiFillFolder />
+              <span>Pages</span>
+            </>
+          }
+          id={""}
+        >
           <Dropdown.Header>Login Screens:</Dropdown.Header>
 
           <Link href="/auth/login" className="dropdown-item">
@@ -91,13 +110,18 @@ const Sidebar: React.FC<SidebarProps> = ({ props }) => {
           </Link>
         </NavDropdown>
 
-        <NavItem href="/history" label="History Page" faIcon={undefined} />
+        <NavItem href="/history" label="History Page" faIcon={<FaHistory />} />
 
         <NavDropdown
-				  title={<>
-					  {/* <FontAwesomeIcon icon={faListAlt} fixedWidth />  */}
-					  <span>Categories</span>
-				  </>} id={""}        >
+          title={
+            <>
+              {/* <FontAwesomeIcon icon={faListAlt} fixedWidth />  */}
+              <BsCardList />
+              <span>Categories</span>
+            </>
+          }
+          id={""}
+        >
           <Link href="/categories" className="dropdown-item">
             Movie
           </Link>

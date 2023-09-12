@@ -56,12 +56,11 @@
 
 // export default ChannelCard;
 
-
-
 import React from "react";
 // import "./ChannelCard.css";
 import Button from "react-bootstrap/Button";
 import { VerifiedTooltipLinkDark } from "../CustomCheckTooltips/CustomCheckTooltips";
+import { RiVerifiedBadgeFill } from "react-icons/ri";
 
 interface ChannelCardProps {
   imgSrc?: string;
@@ -88,7 +87,11 @@ function ChannelCard({
   isSubscribed,
   outline = false,
 }: ChannelCardProps) {
-  let buttonVariant: "outline-secondary" | "outline-danger" | "secondary" | "danger";
+  let buttonVariant:
+    | "outline-secondary"
+    | "outline-danger"
+    | "secondary"
+    | "danger";
 
   if (outline) {
     buttonVariant = isSubscribed ? "outline-secondary" : "outline-danger";
@@ -113,13 +116,10 @@ function ChannelCard({
         <div className="channels-card-body">
           <div className="channels-title">
             <a href={channelHref}>
-              {channelName}{" "}
-              {verified ? <VerifiedTooltipLinkDark /> : ""}
+              {channelName} {verified ? <RiVerifiedBadgeFill /> : ""}
             </a>
           </div>
-          <div className="channels-view">
-            {subscriberCount} subscribers
-          </div>
+          <div className="channels-view">{subscriberCount} subscribers</div>
         </div>
       </div>
     </>
