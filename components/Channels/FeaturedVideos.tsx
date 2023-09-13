@@ -10,7 +10,7 @@ export default function FeaturedVideos() {
 		<>
 			<div className="video-block section-padding">
 				<Row>
-					<Col md={12}>
+					<Col className="mb-2" md={12}>
 						<SectionHeader heading="Featured Videos" />
 					</Col>
 

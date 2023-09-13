@@ -44,11 +44,11 @@ function TopCategory() {
     <>
       <div className="top-category section-padding mb-4">
         <Row>
-          <Col md={12}>
+          <Col className="mb-2" md={12}>
             <SectionHeader
               heading="Channels Categories"
               noIconLabel
-              icon={BsThreeDots}
+              icon={null}
             />
           </Col>
 

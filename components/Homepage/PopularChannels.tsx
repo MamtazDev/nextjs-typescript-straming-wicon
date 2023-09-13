@@ -70,7 +70,7 @@ export default function PopularChannels() {
     <>
       <div className="video-block section-padding">
         <Row>
-          <Col md={12}>
+          <Col className="mb-2" md={12}>
             <SectionHeader heading="Popular Channels" />
           </Col>
 

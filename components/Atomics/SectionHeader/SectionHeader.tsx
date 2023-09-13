@@ -100,9 +100,11 @@ import {
   faTimesCircle,
   faCaretDown,
 } from "@fortawesome/free-solid-svg-icons";
+import { BsThreeDots } from "react-icons/bs";
+import { BiSolidDownArrow } from "react-icons/bi";
 
 interface SectionHeaderProps {
-  heading?: string;
+  heading?: any;
   icon?: any;
   noIconLabel?: boolean;
   dropdownOnly?: any;
@@ -114,8 +116,9 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   noIconLabel = false,
   dropdownOnly = null,
 }) => {
-  let dropdownIcon = icon ? icon : faCaretDown;
-  let dropdownIconLabel = noIconLabel ? "" : "Sort by";
+  let dropdownIcon =
+    heading === "Channels Categories" ? "" : <BiSolidDownArrow />;
+  let dropdownIconLabel = noIconLabel ? <BsThreeDots /> : "Sort by";
 
   let dropdownBodyz: React.ReactNode;
 
@@ -142,7 +145,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
 
 interface ButtonGroupProps {
   dropdownIcon?: any;
-  dropdownIconLabel?: string;
+  dropdownIconLabel?: any;
 }
 
 const ButtonGroup: React.FC<ButtonGroupProps> = ({
@@ -158,7 +161,7 @@ const ButtonGroup: React.FC<ButtonGroupProps> = ({
             id=""
             className="right-action-link text-gray no-after"
           >
-            {dropdownIconLabel}{" "}
+            {dropdownIconLabel} {dropdownIcon}
             <span>{/* <FontAwesomeIcon icon={dropdownIcon} /> */}</span>
           </Dropdown.Toggle>
 

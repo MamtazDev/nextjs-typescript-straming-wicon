@@ -119,7 +119,7 @@ const Navigation: React.FC<NavigationProps> = ({ props }) => {
           <NavDropdown
             title={
               <>
-                <FaBell className="text-secondary m-2" />
+                <FaBell className="text-secondary m-1" />
                 {/* <FontAwesomeIcon icon={faBell} fixedWidth /> */}
                 <Badge bg="danger">9+</Badge>
               </>
