@@ -34,7 +34,6 @@
 
 // export default ListChannel;
 
-
 import Link from "next/link";
 import React from "react";
 // import { Link } from "react-router-dom";
@@ -60,7 +59,7 @@ const ListChannel: React.FC<ListChannelProps> = ({
 
   const labelWithBadge = (
     <>
-      {label} <span className={labelVariant}>{badgeValue}</span>
+      {label} <span className={`${labelVariant} text-black`}>{badgeValue}</span>
     </>
   );
 
@@ -68,11 +67,7 @@ const ListChannel: React.FC<ListChannelProps> = ({
     <>
       <li>
         <Link href={href}>
-          <img
-            className="img-fluid"
-            alt={imgAlt ? imgAlt : ""}
-            src={imgSrc}
-          />{" "}
+          <img className="img-fluid" alt={imgAlt ? imgAlt : ""} src={imgSrc} />{" "}
           {labelBadge ? labelWithBadge : label}
         </Link>
       </li>

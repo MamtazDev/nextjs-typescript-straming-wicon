@@ -2200,6 +2200,7 @@ body.sidebar-toggled footer.sticky-footer {
   font-size: 11px;
   font-weight: 500;
   margin: 0;
+  color: #ff516b !important;
 }
 
 /* slide component end */
@@ -2425,8 +2426,14 @@ body.sidebar-toggled footer.sticky-footer {
 }
 
 .react-multiple-carousel__arrow {
-  min-height: 35px !important;
-  min-width: 35px !important;
+  min-height: 30px !important;
+  min-width: 30px !important;
+  background-color: #dbdbdb !important;
+}
+
+.react-multiple-carousel__arrow::before {
+  font-size: 12px !important;
+  font-weight: bold !important;
 }
 
 .react-multiple-carousel__arrow--left {

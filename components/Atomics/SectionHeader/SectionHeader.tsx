@@ -117,8 +117,16 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   dropdownOnly = null,
 }) => {
   let dropdownIcon =
-    heading === "Channels Categories" ? "" : <BiSolidDownArrow />;
-  let dropdownIconLabel = noIconLabel ? <BsThreeDots /> : "Sort by";
+    heading === "Channels Categories" ? (
+      ""
+    ) : (
+      <BiSolidDownArrow className="bg-white p-1 rounded-circle fs-6" />
+    );
+  let dropdownIconLabel = noIconLabel ? (
+    <BsThreeDots className="bg-white p-1 rounded-circle fs-5" />
+  ) : (
+    "Sort by"
+  );
 
   let dropdownBodyz: React.ReactNode;
 
