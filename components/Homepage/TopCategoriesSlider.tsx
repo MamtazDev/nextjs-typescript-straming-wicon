@@ -64,13 +64,13 @@ function TopCategoriesSlider() {
   var settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 2000,
     slidesToShow: 9,
     slidesToScroll: 1,
     initialSlide: 0,
     swipeToSlide: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 8000,
     //   nextArrow: <SampleNextArrow onClick={function (): void {
     // 	throw new Error("Function not implemented.");
     // } } />,
@@ -148,7 +148,7 @@ function TopCategoriesSlider() {
         responsive={responsive}
         autoPlay={true}
         infinite={true}
-        autoPlaySpeed={1000}
+        autoPlaySpeed={3000}
       >
         <Slide href="#" imgSrc={s1.src} label="Your Life" views="74,853" />
         <Slide imgSrc={s2.src} label="Unboxing Cool" views="74,853" />

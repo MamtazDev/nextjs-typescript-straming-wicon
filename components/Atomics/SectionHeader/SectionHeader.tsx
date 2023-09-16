@@ -213,3 +213,4 @@ const HeadingWrapper: React.FC<HeadingWrapperProps> = ({
 
 export default SectionHeader;
 export { HeadingWrapper };
+
