@@ -28,7 +28,7 @@ import TopMobileSearch from '@/components/Homepage/TopMobileSearch'
       <ContentWrapper>
         <Container fluid className="pb-0">
           <TopMobileSearch />
-          {/* <TopCategory /> */}
+          <TopCategory />
           <hr />         
           {/* <h2 onClick={handleClick}>Click me oni chan</h2> */}
           <VideoBlock />

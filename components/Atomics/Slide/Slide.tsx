@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 interface SlideProps {
 	href?: string;
-	imgSrc?: string;
+	imgSrc?: any;
 	imgAlt?: string;
 	label?: string;
 	views?: string;

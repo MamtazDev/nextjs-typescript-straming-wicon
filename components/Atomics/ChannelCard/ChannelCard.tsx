@@ -64,7 +64,7 @@ import { RiVerifiedBadgeFill } from "react-icons/ri";
 import Image from 'next/image'
 
 interface ChannelCardProps {
-  imgSrc?: string;
+  imgSrc?: any;
   imgAlt?: string;
   imgHref?: string;
   views?: string;
