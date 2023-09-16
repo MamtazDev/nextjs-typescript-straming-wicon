@@ -17,6 +17,7 @@ Version: 1.0
 @font-face {
   font-family: "Font Awesome 5 free";
   src: url("../webfonts/fa-solid-900.ttf");
+  font-display: "swap";
 }
 
 :root {

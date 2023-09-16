@@ -51,6 +51,7 @@ const VideoCard: React.FC<VideoCardProps> = ({
               alt={imgAlt}
               width={387}
               height={242}
+              priority 
             />
           </a>
           <div className="time">{time}</div>

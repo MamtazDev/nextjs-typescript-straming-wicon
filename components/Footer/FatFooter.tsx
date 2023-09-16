@@ -22,6 +22,7 @@ import { BsGlobe2 } from "react-icons/bs";
 import { AiFillMobile } from "react-icons/ai";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Form } from "react-bootstrap";
+import Image from 'next/image'
 
 const FatFooter = () => {
   return (
@@ -33,7 +34,14 @@ const FatFooter = () => {
               <Col lg={3} md={3}>
                 <div className="footer-logo">
                   <a className="logo" href="index.html">
-                    <img alt="" src={logo.src} className="img-fluid" />
+                    {/* 88/29 */}
+                    <Image
+                      src={logo.src}
+                      alt={logo.src}
+                      width={88}
+                      height={29}
+                    />
+                    {/* <img alt="" src={logo.src} className="img-fluid" /> */}
                   </a>
                 </div>
                 <p>
@@ -173,10 +181,22 @@ const FatFooter = () => {
                 <h6 className="mb-2 mt-4">DOWNLOAD APP</h6>
                 <div className="app d-flex gap-2">
                   <a href="#" className="mr-1">
-                    <img alt="" src={google.src} />
+                  <Image
+                      src={google.src}
+                      alt={google.src}
+                      width={65}
+                      height={22}
+                    />
+                    {/* <img alt="" src={google.src} /> */}
                   </a>
                   <a href="#">
-                    <img alt="" src={apple.src} />
+                  <Image
+                      src={google.src}
+                      alt={google.src}
+                      width={65}
+                      height={22}
+                    />
+                    {/* <img alt="" src={apple.src} /> */}
                   </a>
                 </div>
               </Col>
