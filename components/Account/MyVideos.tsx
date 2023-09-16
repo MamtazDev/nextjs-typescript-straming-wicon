@@ -9,7 +9,7 @@ import v4 from "@/assets/img/v4.png"
 const MyVideos: React.FC = () => {
 	return (
 		<>
-			<div className="video-block section-padding ">
+			<div className="video-block section-padding">
 				<Row>
 					<Col md={12}>
 						<SectionHeader heading="My Videos" />

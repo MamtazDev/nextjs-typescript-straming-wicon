@@ -9,7 +9,7 @@ import v4 from "@/assets/img/v4.png"
 const ChannelVideos = () => {
 	return (
 		<>
-			<div className="video-block section-padding ">
+			<div className="video-block section-padding">
 				<Row>
 					<Col md={12}>
 						<SectionHeader heading="Videos" />

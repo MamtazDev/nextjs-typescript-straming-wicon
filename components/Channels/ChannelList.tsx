@@ -9,7 +9,7 @@ import s1 from "@/assets/img/s1.png"
 const ChannelList = () => {
 	return (
 		<>
-			<div className="video-block section-padding ">
+			<div className="video-block section-padding">
 				<Row>
 					<Col className="mb-2" md={12}>
 						<SectionHeader heading="Channels" />

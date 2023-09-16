@@ -8,7 +8,7 @@ import v4 from "@/assets/img/v4.png"
 export default function VideoBlock() {
 	return (
 		<>
-			<div className="video-block section-padding ">
+			<div className="video-block section-padding">
 				<Row>
 					<Col className="mb-2" md={12} >
 						<SectionHeader heading="Featured Videos" />

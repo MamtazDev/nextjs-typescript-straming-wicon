@@ -9,7 +9,7 @@ import s1 from "@/assets/img/s1.png"
 const MyChannels: React.FC = () => {
 	return (
 		<>
-			<div className="video-block section-padding ">
+			<div className="video-block section-padding">
 				<Row>
 					<Col md={12}>
 						<SectionHeader heading="My Channels" />
