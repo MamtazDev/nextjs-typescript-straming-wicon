@@ -166,7 +166,6 @@ const ButtonGroup: React.FC<ButtonGroupProps> = ({
         <Dropdown>
           <Dropdown.Toggle
             as="a"
-            id=""
             className="right-action-link text-gray no-after"
           >
             {dropdownIconLabel} {dropdownIcon}

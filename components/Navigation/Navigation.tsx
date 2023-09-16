@@ -124,7 +124,6 @@ const Navigation: React.FC<NavigationProps> = ({ props }) => {
                 <Badge bg="danger">9+</Badge>
               </>
             }
-            id=""
             className="mx-1 no-arrow"
           >
             <NavDropdown.Item href="#">
@@ -156,7 +155,7 @@ const Navigation: React.FC<NavigationProps> = ({ props }) => {
                 <Badge bg="success">7</Badge>
               </>
             }
-            id=""
+
             className="mx-1 no-arrow"
           >
             <NavDropdown.Item href="#">
@@ -187,7 +186,6 @@ const Navigation: React.FC<NavigationProps> = ({ props }) => {
                 <span className="d-none d-md-inline"> Osahan</span>
               </>
             }
-            id=""
             className="no-arrow osahan-right-navbar-user user-dropdown-link"
           >
             <Link
