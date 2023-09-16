@@ -31,7 +31,7 @@ import TopMobileSearch from '@/components/Homepage/TopMobileSearch'
           <TopCategory />
           <hr />         
           {/* <h2 onClick={handleClick}>Click me oni chan</h2> */}
-          {/* <VideoBlock /> */}
+          <VideoBlock />
           <hr className="mt-0" />
           <PopularChannels />
         </Container>
