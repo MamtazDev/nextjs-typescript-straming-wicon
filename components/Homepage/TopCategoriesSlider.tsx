@@ -126,7 +126,7 @@ function TopCategoriesSlider() {
   };
   return (
     <>
-      {/* <Slider {...settings}>
+      <Slider {...settings}>
         <Slide href="#" imgSrc={s1.src} label="Your Life" views="74,853" />
         <Slide imgSrc={s2.src} label="Unboxing Cool" views="74,853" />
         <Slide imgSrc={s3.src} label="Service Reviewing" views="74,853" />
@@ -143,8 +143,9 @@ function TopCategoriesSlider() {
         />
         <Slide imgSrc={s1.src} label="Comedy" views="74,853" verified />
         <Slide imgSrc={s1.src} label="Lifestyle Advice" views="74,853" />
-      </Slider> */}
-      <Carousel
+      </Slider>
+      
+      {/* <Carousel
         responsive={responsive}
         autoPlay={false}
         infinite={true}
@@ -166,7 +167,7 @@ function TopCategoriesSlider() {
         />
         <Slide imgSrc={s1.src} label="Comedy" views="74,853" verified />
         <Slide imgSrc={s1.src} label="Lifestyle Advice" views="74,853" />
-      </Carousel>
+      </Carousel> */}
     </>
   );
 }
