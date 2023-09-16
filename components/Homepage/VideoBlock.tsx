@@ -30,7 +30,7 @@ export default function VideoBlock() {
 						<VideoCard
 							imgSrc={v4.src}
 							time="3:60"
-							videoTitle="There are many variations of passages of Lorem"
+							videoTitle="lorem ipsum lorem ipsum fine"
 							videoCategory="Education"
 							views="1.8M"
 							timeAgo="11 months"
@@ -42,7 +42,7 @@ export default function VideoBlock() {
 						<VideoCard
 							imgSrc={v4.src}
 							time="3:40"
-							videoTitle="There are many variations of passages of Lorem"
+							videoTitle="Website development crush course"
 							videoCategory="Education"
 							views="1.8M"
 							timeAgo="11 months"
@@ -53,7 +53,7 @@ export default function VideoBlock() {
 						<VideoCard
 							imgSrc={v4.src}
 							time="3:80"
-							videoTitle="There are many variations of passages of Lorem"
+							videoTitle="We shall over come some days"
 							videoCategory="Education"
 							views="1.8M"
 							timeAgo="11 months"
@@ -65,7 +65,7 @@ export default function VideoBlock() {
 						<VideoCard
 							imgSrc={v4.src}
 							time="3:90"
-							videoTitle="There are many variations of passages of Lorem"
+							videoTitle="Ah deep in my heart, I do believe"
 							videoCategory="Education"
 							views="1.8M"
 							timeAgo="11 months"
@@ -76,7 +76,7 @@ export default function VideoBlock() {
 						<VideoCard
 							imgSrc={v4.src}
 							time="4:50"
-							videoTitle="There are many variations of passages of Lorem"
+							videoTitle="No mans land movie reviews"
 							videoCategory="Education"
 							views="1.8M"
 							timeAgo="11 months"
@@ -88,7 +88,7 @@ export default function VideoBlock() {
 						<VideoCard
 							imgSrc={v4.src}
 							time="4:60"
-							videoTitle="There are many variations of passages of Lorem"
+							videoTitle="Javascript Crush course in One videos"
 							videoCategory="Education"
 							views="1.8M"
 							timeAgo="11 months"
@@ -100,7 +100,7 @@ export default function VideoBlock() {
 						<VideoCard
 							imgSrc={v4.src}
 							time="4:80"
-							videoTitle="There are many variations of passages of Lorem"
+							videoTitle="React and nextjs crus course in one video"
 							videoCategory="Education"
 							views="1.8M"
 							timeAgo="11 months"
