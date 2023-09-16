@@ -29,7 +29,7 @@ export default function VideoBlock() {
 					<Col xl={3} sm={6} className="mb-3">
 						<VideoCard
 							imgSrc={v4.src}
-							time="3:50"
+							time="3:60"
 							videoTitle="There are many variations of passages of Lorem"
 							videoCategory="Education"
 							views="1.8M"
@@ -41,7 +41,7 @@ export default function VideoBlock() {
 					<Col xl={3} sm={6} className="mb-3">
 						<VideoCard
 							imgSrc={v4.src}
-							time="3:50"
+							time="3:40"
 							videoTitle="There are many variations of passages of Lorem"
 							videoCategory="Education"
 							views="1.8M"
@@ -52,30 +52,7 @@ export default function VideoBlock() {
 					<Col xl={3} sm={6} className="mb-3">
 						<VideoCard
 							imgSrc={v4.src}
-							time="3:50"
-							videoTitle="There are many variations of passages of Lorem"
-							videoCategory="Education"
-							views="1.8M"
-							timeAgo="11 months"
-							verified
-						/>
-					</Col>
-
-					<Col xl={3} sm={6} className="mb-3">
-						<VideoCard
-							imgSrc={v4.src}
-							time="3:50"
-							videoTitle="There are many variations of passages of Lorem"
-							videoCategory="Education"
-							views="1.8M"
-							timeAgo="11 months"
-						/>
-					</Col>
-
-					<Col xl={3} sm={6} className="mb-3">
-						<VideoCard
-							imgSrc={v4.src}
-							time="3:50"
+							time="3:80"
 							videoTitle="There are many variations of passages of Lorem"
 							videoCategory="Education"
 							views="1.8M"
@@ -87,7 +64,18 @@ export default function VideoBlock() {
 					<Col xl={3} sm={6} className="mb-3">
 						<VideoCard
 							imgSrc={v4.src}
-							time="3:50"
+							time="3:90"
+							videoTitle="There are many variations of passages of Lorem"
+							videoCategory="Education"
+							views="1.8M"
+							timeAgo="11 months"
+						/>
+					</Col>
+
+					<Col xl={3} sm={6} className="mb-3">
+						<VideoCard
+							imgSrc={v4.src}
+							time="4:50"
 							videoTitle="There are many variations of passages of Lorem"
 							videoCategory="Education"
 							views="1.8M"
@@ -99,7 +87,19 @@ export default function VideoBlock() {
 					<Col xl={3} sm={6} className="mb-3">
 						<VideoCard
 							imgSrc={v4.src}
-							time="3:50"
+							time="4:60"
+							videoTitle="There are many variations of passages of Lorem"
+							videoCategory="Education"
+							views="1.8M"
+							timeAgo="11 months"
+							verified
+						/>
+					</Col>
+
+					<Col xl={3} sm={6} className="mb-3">
+						<VideoCard
+							imgSrc={v4.src}
+							time="4:80"
 							videoTitle="There are many variations of passages of Lorem"
 							videoCategory="Education"
 							views="1.8M"

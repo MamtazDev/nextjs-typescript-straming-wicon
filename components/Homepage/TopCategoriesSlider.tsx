@@ -150,10 +150,10 @@ function TopCategoriesSlider() {
       <Carousel
         responsive={responsives}
         autoPlay={false}
-        infinite={false}
+        infinite={true}
         // autoPlaySpeed={3000}
       >
-        <Slide href="#" imgSrc={s1.src} label="Your Life" views="74,853" />
+        <Slide imgSrc={s1.src} label="Your Life" views="74,853" />
         <Slide imgSrc={s2.src} label="Unboxing Cool" views="74,853" />
         <Slide imgSrc={s3.src} label="Service Reviewing" views="74,853" />
         <Slide imgSrc={s4.src} label="Gaming" views="74,853" verified />
