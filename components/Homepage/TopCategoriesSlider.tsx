@@ -105,7 +105,8 @@ function TopCategoriesSlider() {
       },
     ],
   };
-  const responsive = {
+
+  const responsives = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
@@ -124,6 +125,7 @@ function TopCategoriesSlider() {
       items: 1,
     },
   };
+
   return (
     <>
       {/* <Slider {...settings}>
@@ -144,9 +146,9 @@ function TopCategoriesSlider() {
         <Slide imgSrc={s1.src} label="Comedy" views="74,853" verified />
         <Slide imgSrc={s1.src} label="Lifestyle Advice" views="74,853" />
       </Slider> */}
-      
+
       <Carousel
-        responsive={responsive}
+        responsive={responsives}
         autoPlay={false}
         infinite={true}
         // autoPlaySpeed={3000}

@@ -26,7 +26,7 @@ const Slide: React.FC<SlideProps> = ({
 	return (
 		<div className="item">
 			<div className="category-item">
-				{/* <a href={href || "#"}> */}
+				<a href={href || "#"}>
 					<Image
 						src={imgSrc}
 						alt={imgAlt}
@@ -37,7 +37,7 @@ const Slide: React.FC<SlideProps> = ({
 						{label} {verifyLabel}
 					</h6>
 					<p>{views} views</p>
-				{/* </a> */}
+				</a>
 			</div>
 		</div>
 	);
