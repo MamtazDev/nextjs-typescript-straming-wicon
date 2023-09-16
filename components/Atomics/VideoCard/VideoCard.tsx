@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlayCircle, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { PiSmileySadFill } from "react-icons/pi";
+import Image from 'next/image'
 
 interface VideoCardProps {
   iconHref?: string;
@@ -44,7 +45,14 @@ const VideoCard: React.FC<VideoCardProps> = ({
             <FontAwesomeIcon icon={faPlayCircle} />
           </a>
           <a href={imgHref}>
-            <img className="img-fluid" src={imgSrc} alt={imgAlt} />
+            {/* Image */}
+            <Image
+              src={imgSrc}
+              alt={imgAlt}
+              width={387}
+              height={242}
+            />
+            {/* <img className="img-fluid" src={imgSrc} alt={imgAlt} /> */}
           </a>
           <div className="time">{time}</div>
         </div>

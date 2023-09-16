@@ -9,6 +9,7 @@ import {
   faCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import Slider from "react-slick";
+
 import s1 from "@/assets/img/s1.png";
 import s2 from "@/assets/img/s2.png";
 import s3 from "@/assets/img/s3.png";
