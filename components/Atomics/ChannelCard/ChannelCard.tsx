@@ -62,6 +62,7 @@ import Button from "react-bootstrap/Button";
 import { VerifiedTooltipLinkDark } from "../CustomCheckTooltips/CustomCheckTooltips";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import Image from 'next/image'
+
 interface ChannelCardProps {
   imgSrc?: string;
   imgAlt?: string;
@@ -111,7 +112,6 @@ function ChannelCard({
                 width={80}
                 height={80}
               />
-            {/* <img className="img-fluid" src={imgSrc} alt={imgAlt} /> */}
           </a>
           <div className="channels-card-image-btn">
             <Button variant={buttonVariant}>

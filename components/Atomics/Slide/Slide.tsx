@@ -23,24 +23,15 @@ const Slide: React.FC<SlideProps> = ({
 }) => {
 	const verifyLabel = verified ? <RiVerifiedBadgeFill /> : null;
 
-
-	
-
 	return (
 		<div className="item">
 			<div className="category-item">
 				{/* <a href={href || "#"}> */}
-					{/* <img
-						className="img-fluid custom-slick-img"
-						src={imgSrc}
-						alt={imgAlt}
-					/> */}
 					<Image
 						src={imgSrc}
 						alt={imgAlt}
 						width={60}
 						height={60}
-						quality={100}
 						/>
 					<h6>
 						{label} {verifyLabel}

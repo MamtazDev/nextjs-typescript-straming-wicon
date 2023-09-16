@@ -52,7 +52,6 @@ const VideoCard: React.FC<VideoCardProps> = ({
               width={387}
               height={242}
             />
-            {/* <img className="img-fluid" src={imgSrc} alt={imgAlt} /> */}
           </a>
           <div className="time">{time}</div>
         </div>
