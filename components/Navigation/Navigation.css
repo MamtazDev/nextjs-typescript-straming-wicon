@@ -158,6 +158,16 @@
 	.osahan-navbar-search {
 		margin-right: 15px !important;
 	}
+	.osahan-navbar-search {
+		margin-right: 50px !important;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+	
+	.osahan-navbar-search {
+		margin-right: 0px !important;
+	}
 }
 
 @media (min-width: 768px) {
