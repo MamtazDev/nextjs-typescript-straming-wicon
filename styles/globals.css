@@ -2434,3 +2434,14 @@ body.sidebar-toggled footer.sticky-footer {
 .react-multiple-carousel__arrow--right {
   right: calc(1% + 1px) !important
 }
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+	
+	.osahan-navbar-search {
+		margin-right: 0px !important;
+	}
+}
+
+.form-label{
+  padding: 15px 0px;
+}
